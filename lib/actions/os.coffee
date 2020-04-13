@@ -87,7 +87,6 @@ exports.download =
 			$ balena os download raspberrypi3 -o ../foo/bar/raspberry-pi.img --version default
 			$ balena os download raspberrypi3 -o ../foo/bar/raspberry-pi.img --version menu
 	'''
-	permission: 'user'
 	options: [
 		{
 			signature: 'output'
