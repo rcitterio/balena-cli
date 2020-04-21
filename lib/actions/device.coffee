@@ -87,32 +87,54 @@ exports.info =
 		normalizeUuidProp(params)
 		balena = getBalenaSdk()
 
-		balena.models.device.get(params.uuid, expandForAppName)
-		.then (device) ->
-			balena.models.device.getStatus(device).then (status) ->
-				device.status = status
-				device.dashboard_url = balena.models.device.getDashboardUrl(device.uuid)
-				device.application_name =
-					if device.belongs_to__application?[0] then device.belongs_to__application[0].app_name else 'N/a'
-				device.commit = device.is_on__commit
+		Promise.all([
+			balena.models.device.get(params.uuid,
+				Object.assign({
+					$select: [
+						'id'
+						'uuid'
+						'device_name'
+						'device_type'
+						'overall_status'
+						'is_online'
+						'ip_address'
+						'last_seen'
+						'is_on__commit'
+						'supervisor_version'
+						'is_web_accessible'
+						'note'
+						'os_version'
+					]
+				}, expandForAppName)
+			)
+			# TODO: combine with the above query once the overall_status field
+			# is moved to open-balena-api
+			balena.models.device.get(params.uuid, { $select: 'overall_status' }).get('overall_status').catchReturn(null)
+		])
+		.then ([device, overallStatus]) ->
+			device.status = overallStatus
+			device.dashboard_url = balena.models.device.getDashboardUrl(device.uuid)
+			device.application_name =
+				if device.belongs_to__application?[0] then device.belongs_to__application[0].app_name else 'N/a'
+			device.commit = device.is_on__commit
 
-				console.log getVisuals().table.vertical device, [
-					"$#{device.device_name}$"
-					'id'
-					'device_type'
-					'status'
-					'is_online'
-					'ip_address'
-					'application_name'
-					'last_seen'
-					'uuid'
-					'commit'
-					'supervisor_version'
-					'is_web_accessible'
-					'note'
-					'os_version'
-					'dashboard_url'
-				]
+			console.log getVisuals().table.vertical device, [
+				"$#{device.device_name}$"
+				'id'
+				'device_type'
+				'status'
+				'is_online'
+				'ip_address'
+				'application_name'
+				'last_seen'
+				'uuid'
+				'commit'
+				'supervisor_version'
+				'is_web_accessible'
+				'note'
+				'os_version'
+				'dashboard_url'
+			]
 
 exports.register =
 	signature: 'device register <application>'
