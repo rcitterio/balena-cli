@@ -1,4 +1,268 @@
 - commits:
+    - subject: 'os download: Allow not logged in users to download images'
+      hash: 10159da5428135fdb6f384f97482d0dc16014301
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+        See: 'https://github.com/balena-io/balena-cli/pull/1742'
+        see: 'https://github.com/balena-io/balena-cli/pull/1742'
+        Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+        signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+      author: Thodoris Greasidis
+    - subject: 'device os-update: Refactor to use the overall_progress field'
+      hash: 467324e3dd0d567a07268692eccbe22c9407bca1
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+        signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+      author: Thodoris Greasidis
+    - subject: Drop balena-device-status from the dependencies
+      hash: 32b1a7b5789f9ff41fd7d335f7e75eb3a5572755
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Thodoris Greasidis
+    - subject: 'balena device: Refactor to use the overall_status field'
+      hash: 8854f0e4f8892022894bc07d0691d88030457435
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+        signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+      author: Thodoris Greasidis
+    - subject: '**Breaking** Bump minimum supported Node.js version to 10'
+      hash: 44348741fda502d4a5448da8284cf98a60c06735
+      body: ''
+      footer:
+        Change-type: major
+        change-type: major
+        Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+        signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+      author: Thodoris Greasidis
+    - subject: Update dependencies to pick up performance improvements
+      hash: 82e17cea6a85ee916843701e4a78adde188b8be2
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Pagan Gazzard
+    - subject: Update balena-sdk to 13.2.2
+      hash: 23f3ff04d67b0a8eee79f60bbefe4be02e40a695
+      body: |
+        Update balena-sdk from 12.33.0 to 13.2.2
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Thodoris Greasidis
+      nested:
+        - commits:
+            - subject: Update dependencies
+              hash: d91c5ba6693061798058dff28a2df53e6fc462c8
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+          version: balena-sdk-13.2.2
+          date: 2020-04-21T11:44:38.358Z
+        - commits:
+            - subject: Remove lodash/pick usage
+              hash: 895444c643571378b1a946f24f3432646b1281af
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+            - subject: Remove lodash/omit usage
+              hash: 5a2a27d134e12252cb881dcaf9e302577fb92a4c
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+            - subject: Switch to native equivalent of lodash/without
+              hash: d4d71a641c2580d4afd26d651ea4cd8257d6f110
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+          version: balena-sdk-13.2.1
+          date: 2020-04-20T16:27:28.531Z
+        - commits:
+            - subject: Add a device.getProgress convenience method
+              hash: 55f073214d9c57a9e886705ab66d0b71fb6715b8
+              body: ''
+              footer:
+                Resolves: '#790'
+                resolves: '#790'
+                Depends-on: 'https://github.com/balena-io/balena-api/issues/2515'
+                depends-on: 'https://github.com/balena-io/balena-api/issues/2515'
+                See: >-
+                  https://www.flowdock.com/app/rulemotion/resin-tech/threads/vFYF1_0T0MhlpvvnZHyko5BQRhK
+                see: >-
+                  https://www.flowdock.com/app/rulemotion/resin-tech/threads/vFYF1_0T0MhlpvvnZHyko5BQRhK
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+                signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+              author: Thodoris Greasidis
+          version: balena-sdk-13.2.0
+          date: 2020-04-17T18:17:44.670Z
+        - commits:
+            - subject: Update dependencies
+              hash: c71b5b7169f51e00ed9a6330f99f23ccb62a821e
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+          version: balena-sdk-13.1.1
+          date: 2020-04-17T17:37:18.734Z
+        - commits:
+            - subject: Add created_at typings to Application resource
+              hash: 20568c9a435f0d70309e7de4a769e328e3092a93
+              body: ''
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Stevche Radevski <stevche@balena.io>
+                signed-off-by: Stevche Radevski <stevche@balena.io>
+              author: Stevche Radevski
+          version: balena-sdk-13.1.0
+          date: 2020-04-16T16:56:28.236Z
+        - commits:
+            - subject: Properly define the arguments of setSharedOptions in the docs
+              hash: d1c132f3eaa2c5b403b1f5b457c49e3db39d07af
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+                See: >-
+                  https://www.flowdock.com/app/rulemotion/resin-frontend/threads/3eCAs-qJlsqpC1eYlXTgV6dlK8-
+                see: >-
+                  https://www.flowdock.com/app/rulemotion/resin-frontend/threads/3eCAs-qJlsqpC1eYlXTgV6dlK8-
+                Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+                signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+              author: Thodoris Greasidis
+            - subject: Fix the docs fromSharedOptions to not accept any argument
+              hash: 84956ceecee256386aac3b8a8417ad28c91ebbe3
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+                signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+              author: Thodoris Greasidis
+          version: balena-sdk-13.0.2
+          date: 2020-04-16T12:28:08.719Z
+        - commits:
+            - subject: 'tests: Fix the mock image install incosnistencies'
+              hash: 9d3e3e064243024c42a02b89dc58930c9379a735
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+                See: 'https://github.com/balena-io/balena-api/pull/1920'
+                see: 'https://github.com/balena-io/balena-api/pull/1920'
+                Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+                signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+              author: Thodoris Greasidis
+          version: balena-sdk-13.0.1
+          date: 2020-04-13T11:50:05.056Z
+        - commits:
+            - subject: >-
+                **BREAKING**: Change the device.getStatus() to expect a uuid or
+                id arg
+              hash: 766c8bf807ec199a0b19ba05f2f3e4e4290fb965
+              body: >
+                Keeping the method for discoverability & convenience reasons. I
+                also expect this to be easier for users
+
+                upgrading from an older version.
+              footer:
+                Change-type: major
+                change-type: major
+                See: >-
+                  https://www.flowdock.com/app/rulemotion/resin-frontend/threads/KlyXZlJ86S-nvOuJbuOdpbmo54i
+                see: >-
+                  https://www.flowdock.com/app/rulemotion/resin-frontend/threads/KlyXZlJ86S-nvOuJbuOdpbmo54i
+                Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+                signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+              author: Thodoris Greasidis
+            - subject: '**BREAKING** Drop the imageMakerUrl constructor option'
+              hash: 58b4d7602fbc865d26f0cdff4d8bb43936c70dc9
+              body: |
+                This was deprecated and no longer used since
+                v12.12.0, so it's just removing it from the docs.
+              footer:
+                Change-type: major
+                change-type: major
+                Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+                signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+              author: Thodoris Greasidis
+            - subject: >-
+                **BREAKING** typings: Drop Application properties not part of
+                the model
+              hash: 0fe3d6b982ddbfd5db046900af578290d98d95ac
+              body: ''
+              footer:
+                Change-type: major
+                change-type: major
+                Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+                signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+              author: Thodoris Greasidis
+            - subject: '*BREAKING*: Stop actively supporting node 6 & 8'
+              hash: 7a383f5403510e266a6055c03e0c5f45ee7c7f18
+              body: |
+                Node 6 & 8 may well still work with the SDK for quite a
+                while, but we'll no longer actively test against them
+                since they are now characterized as EOL, and it's quite
+                possible that it may stop working entirely in any
+                future release.
+              footer:
+                Change-type: major
+                change-type: major
+                Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+                signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+              author: Thodoris Greasidis
+            - subject: Bump minimum supported Typescript to v3.8.2
+              hash: aa51823fc7138b7fb047464fdd9dae5448681ee7
+              body: ''
+              footer:
+                Change-type: major
+                change-type: major
+                Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+                signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+              author: Thodoris Greasidis
+            - subject: Make sure the config & os tests start unauthenticated
+              hash: 6f56c04b8c015e572b604d6e0652b22fc548fa15
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+                signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+              author: Thodoris Greasidis
+            - subject: '**BREAKING** Update to balena-pine 11.0.0'
+              hash: 1fcec15d072b8a8807e4d1f90fcae01948613195
+              body: ''
+              footer:
+                Change-type: major
+                change-type: major
+                Signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+                signed-off-by: Thodoris Greasidis <thodoris@balena.io>
+              author: Thodoris Greasidis
+          version: balena-sdk-13.0.0
+          date: 2020-04-10T22:29:34.487Z
+  version: 12.0.0
+  date: 2020-04-21T16:46:46.086Z
+- commits:
     - subject: Update codeowners
       hash: 5f098e7410ec60c1132b34395cb95f8c5547c09d
       body: ''
