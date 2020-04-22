@@ -15,7 +15,6 @@ limitations under the License.
 ###
 
 module.exports =
-	apiKey: require('./api-key')
 	app: require('./app')
 	auth: require('./auth')
 	device: require('./device')

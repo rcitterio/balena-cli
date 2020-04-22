@@ -42,9 +42,6 @@ capitano.globalOption
 # ---------- Help Module ----------
 capitano.command(actions.help.help)
 
-# ---------- Api key module ----------
-capitano.command(actions.apiKey.generate)
-
 # ---------- App Module ----------
 capitano.command(actions.app.create)
 capitano.command(actions.app.list)

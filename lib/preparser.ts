@@ -126,6 +126,7 @@ function checkDeletedCommand(argvSlice: string[]): void {
 }
 
 export const convertedCommands = [
+	'api-key:generate',
 	'devices:supported',
 	'envs',
 	'env:add',
