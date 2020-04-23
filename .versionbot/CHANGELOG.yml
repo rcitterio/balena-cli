@@ -1,4 +1,16 @@
 - commits:
+    - subject: Convert app commands to oclif
+      hash: 363c2561819433a240c917a6e3a7840a58d6e333
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Scott Lowe <scott@balena.io>
+        signed-off-by: Scott Lowe <scott@balena.io>
+      author: Scott Lowe
+  version: 11.31.12
+  date: 2020-04-23T09:04:49.116Z
+- commits:
     - subject: Avoid patch-package warning with 'npm install -g --production'
       hash: ebdd04ec735ffaef239f5d5b41fbc1535a885b16
       body: ''
