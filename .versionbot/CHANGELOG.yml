@@ -1,4 +1,21 @@
 - commits:
+    - subject: Convert lib/utils/compose.coffee to javascript
+      hash: 3ff99bac7e8b29486546c95516254a60962de6ac
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Pagan Gazzard
+    - subject: Convert lib/utils/qemu.coffee to javascript
+      hash: bc2738d34b00b422796626aa13f2a9e1e1cf44dc
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Pagan Gazzard
+  version: 11.31.14
+  date: 2020-04-23T16:27:58.895Z
+- commits:
     - subject: Remove unnecessary files
       hash: c3454d3abb5a8ddb46a373f91b6fc428ca412bfa
       body: ''
